@@ -27,7 +27,7 @@ app.use("/inventory", inventoryRoute)
 
 
 
-app.listen(8000, async (req, res) => {
+app.listen(8001, async (req, res) => {
     try {
         await connection;   // connecting to Database
         console.log("DB is connected")
@@ -35,6 +35,6 @@ app.listen(8000, async (req, res) => {
     catch (error) {
         console.log("DB is not connected", error)
     }
-    console.log(`Listening at Port ${8000}`)
+    console.log(`Listening at Port ${8001}`)
 })
 
